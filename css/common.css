@@ -1,0 +1,55 @@
+/*     start products codes     */
+
+.products {
+  position: relative;
+  top: -250px;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  padding: 0 6rem;
+  z-index: 0;
+}
+
+.products .product {
+  background: var(--card);
+  border-radius: 5px;
+  width: 20%;
+  padding-bottom: 1rem;
+}
+.products .product .product-image {
+  border: 2px solid var(--gold);
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.products .product .wrapper-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 1rem;
+  font-family: Roboto;
+
+}
+
+.products .product .wrapper-info .name-product {
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+}
+
+.products .product .wrapper-info .price {
+  color: var(--text);
+}
+
+.products .product .shop-icon i{
+  color: var(--gold);
+  filter: drop-shadow(0 0px 5px var(--gold));
+
+}
+
+
+.products .product .product-image:first-child {
+  height: 271px;
+  width: 100%;
+  object-fit: cover;
+}

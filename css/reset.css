@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg: #08090b;
+  --bg-2: #08090b;
+  --surafe: #111215;
+  --card: #1d1e20;
+  --border: #32302c;
+
+  --gold: #b89a5a;
+  --gold-light: #d2b76d;
+  --gold-dark: #675c4c;
+
+  --text: #e5e1d8;
+  --text-muted: #8c8982;
+}
+body {
+  background-color: var(--bg);
+}
+@font-face {
+  font-family: "montserrat italic";
+  src: url("../assets/fonts/Montserrat-Italic-VariableFont_wght.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "montserrat";
+  src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../assets/fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: var(--gold);
+}
+ul,
+li {
+  list-style-type: none;
+  font-family: Roboto;
+}

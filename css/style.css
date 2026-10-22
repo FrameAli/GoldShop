@@ -1,0 +1,140 @@
+/*      start header codes      */
+
+#container-all-section .head-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#container-all-section .head-container .logo-picture {
+  width: 100px;
+}
+
+#container-all-section .head-container .wrapper-list {
+  display: flex;
+  position: relative;
+  z-index: 10;
+  gap: 3rem;
+}
+
+#container-all-section .head-container .wrapper-list .list-item {
+  position: relative;
+  padding: 0 0.3rem;
+}
+
+#container-all-section
+  .head-container
+  .wrapper-list
+  .list-item
+  .link-list-item {
+}
+.head-container .icon-box {
+  width: 70%;
+  text-align: right;
+  color: var(--text-muted);
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-inline-end: 1.5rem;
+}
+.head-container .icon-box i {
+  cursor: pointer;
+}
+
+.head-container .icon-box i:last-child {
+  filter: drop-shadow(0 0px 5px var(--gold));
+
+  background: transparent;
+}
+
+/* after before effects */
+
+#container-all-section .head-container .wrapper-list .list-item::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+  pointer-events: none;
+  left: 50%;
+  right: 50%;
+  bottom: -5px;
+  height: 1px;
+  background: var(--gold);
+  transition: all 0.5s ease;
+}
+#container-all-section .head-container .wrapper-list .list-item:hover::after {
+  left: 0;
+  right: 0;
+  opacity: 1;
+  pointer-events: all;
+}
+
+/*      start main codes      */
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-container .left-section {
+  width: 45%;
+  height: 75vh;
+  position: relative;
+  top: -150px;
+  left: 120px;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.9rem;
+  padding-left: 3rem;
+}
+
+.content-container .left-section .title-site {
+  font-size: 3.1rem;
+  color: var(--gold);
+  text-shadow: 0 0 25px var(--gold);
+  letter-spacing: 0.7rem;
+  font-family: Roboto;
+
+}
+
+.content-container .left-section .description-site {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  font-family: Roboto;
+
+  
+}
+
+.content-container .left-section .discover-btn {
+  border: 1px solid var(--gold);
+  display: inline-block;
+  width: fit-content;
+  box-shadow: 0 0 14px var(--gold);
+  text-shadow: 0 0 15px var(--gold);
+  padding: 0.5rem 0.8rem;
+  margin-left: 50px;
+  background: transparent;
+  transition: all 0.5s;
+  font-family: Roboto;
+}
+
+.content-container .left-section .discover-btn:hover {
+    transform: scale(1.2);
+
+}
+
+.content-container .background-image {
+  background-image: url("../assets/img/background.jpg");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: right top;
+  width: 100%;
+  height: 75vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
